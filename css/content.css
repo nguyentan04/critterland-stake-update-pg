@@ -1,0 +1,581 @@
+html, head, body, div, ul, li, p, img, h2 {
+    margin:0px;
+    padding:0px;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+a, a:active, a:visited, a:hover {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+html {
+    font-family: Kanit;
+    -webkit-font-smoothing: antialiased;
+    background-color: #030d35;
+}
+h2 {
+    color: #00ffd8;    
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 130%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: auto auto 60px;
+    text-align: center;
+    max-width: 900px;    
+}
+
+.scrollbar::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.scrollbar::-webkit-scrollbar{
+	background-color: #F5F5F5;
+    width: 12px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #faf7f5;
+    width:12px;
+}
+
+.header > .desktop {
+    display: none;
+}
+.header > .mobile > a > .logo-game{
+    width: 80px;
+    top: 80px;
+    left: 20px;
+    position:fixed;
+    z-index:50;
+}
+.header > .mobile > .menu-icon{
+    position: fixed;
+    top: 98px;
+    right: 20px;
+    font-size: 40px;
+    color: #787878;
+    z-index:50;
+}
+
+.header > .mobile > .menu-bar{
+    z-index: 100;
+}
+.header > .mobile > .menu-bar > a > .logo-game{
+    width: 50px;
+    margin: 20px 0px 0px 20px;
+}
+.header > .mobile > .menu-bar.close {
+    display: none;
+}
+
+.header > .mobile > .menu-bar.open {
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    color: white;
+    background: #042234;
+    width: 100%;
+    height: 100%;
+}
+
+.mobile > .menu-bar > .menu-icon-close {
+    position: relative;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+}
+
+.mobile > .menu-bar > .menu-item{
+    border-radius: 20px;
+    background: #162833;
+    top: 85px;
+    overflow-y: overlay;
+    height: 71vh;
+    margin: 20px;
+}
+
+.mobile > .menu-bar > .menu-item > a {
+    padding: 10px;
+    display: block; 
+    padding-left: 50px;
+    color: white; 
+}
+.mobile > .menu-bar > .menu-item > a:active {
+    color: white;  
+}
+.mobile > .menu-bar > .menu-item > a:visited {
+    color: white;
+}
+.mobile > .menu-bar > .menu-item > a:hover {
+    color: white;
+}
+
+.header > .header-info-token {
+    background: #e6604a;
+    text-align: center;
+    color: white;
+    position: relative;
+    top: -16px;
+    z-index: 0;
+}
+.header > .header-info-token > p{
+    margin-top: 15px;
+    padding-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+}
+
+.header > .header-info-token > a > p{
+    padding-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+}
+
+.header > .header-info-token > a {
+    color: white;
+}
+.header > .header-info-token > a:active {
+    color: white;
+}
+.header > .header-info-token > a:visited {
+    color: white;
+}
+.header > .header-info-token > a:hover {
+    color: white;
+}
+
+
+.footer > .desktop {
+    display: none;
+}
+.footer {
+    background: #3c6ffc;    
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+.footer > .mobile > .footer-menu {
+    margin: 0 auto;
+    width: 310px;
+}
+.footer > .mobile > .footer-menu > .footer-icon> .footer-item {
+    margin:5px;
+    float:left;
+}
+.footer > .mobile > .footer-menu > .footer-icon> .footer-item.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.footer > .mobile > .footer-menu > .footer-icon> .footer-item.label {
+    line-height: 50px;
+    color:white;
+}
+.footer > .mobile > .footer-menu > .footer-icon> .footer-item > .pancakeswap-cake{
+    width: 40px;
+    margin: 5px;
+}
+.footer > .mobile > .footer-menu > .footer-icon> .footer-item.coin { 
+    color: white;
+    background: #34a853;
+    border-radius: 32px;
+    padding: 15px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.float-right {
+    float:right;
+}
+.float-left {
+    float:left;
+}
+
+/*HOME Welcome*/
+.body {
+    margin-top: -16px;
+}
+.body > .body-content {
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+.body > #home.body-content {
+    /* background-image: url(../img/bg-section1.jpg); */
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.body > .body-content > .content-home > .home-welcome {
+    margin: 0 auto;
+    max-width: 300px;
+    display: block;
+    padding-top: 100px;
+}
+.body > .body-content > .content-home > .home-welcome > img{
+    max-width: 300px;
+}
+.body > .body-content > .content-home > .home-store {
+    margin: 0 auto;
+    max-width: 204px;
+    display: block;
+}
+.body > .body-content > .content-home > .home-store > .home-appstore > img, .body > .body-content > .content-home > .home-store > .home-chplay > img{
+    max-width: 100px;
+}
+
+.body > .body-content > .content-home > .home-store > .home-appstore, .body > .body-content > .content-home > .home-store > .home-chplay {
+    display:inline;
+}
+/*HOME Welcome*/
+
+/*GamePlay*/
+.body > #gamePlay.body-content {
+    /* background-image: url(../img/bg-section2.jpg); */
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.body > .body-content > .content-gameplay > .gameplay-header{
+    margin: 0 auto;
+    display: block;
+}
+
+/*Slide show */
+.body > .body-content > .content-gameplay > .gameplay-slide > .slide-menu {
+    margin: 0 auto;
+    width: 304px;
+    display: block;
+}
+.body > .body-content > .content-gameplay > .gameplay-slide > .slide-menu > .slide-item {
+    display:inline;
+}
+
+.body > .body-content > .content-gameplay > .gameplay-slide > .slide-menu > .slide-item > img{
+    width: 150px;
+}
+.body > .body-content > .content-gameplay > .gameplay-slide > .slide-menu >.control {
+    position: relative;
+    cursor: pointer;
+    top: -133px;
+    width: 11px;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.body > .body-content > .content-gameplay > .gameplay-slide > .slide-menu >.control:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.body > .body-content > .content-gameplay > .gameplay-slide > .slide-menu >.prev {
+    float:left;
+}
+.body > .body-content > .content-gameplay > .gameplay-slide > .slide-menu >.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    float:right;
+}
+
+/*start mobaEsport*/
+.body > #mobaEsport.body-content {
+    /* background-image: url(../img/bg-section2.jpg); */
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.body > .body-content > .content-mobaesport {
+    margin: 0 auto;
+    width: 310px;
+}
+.body > .body-content > .content-mobaesport > .mobaesport-play {
+    color: rgb(248, 203, 99);
+    font-family: Kanit;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 130%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.body > .body-content > .content-mobaesport > .mobaesport-video {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+.body > .body-content > .content-mobaesport > .mobaesport-video > img {
+    height: auto;
+    max-width: 100%;
+    image-rendering: -webkit-optimize-contrast;
+}
+.body > .body-content > .content-mobaesport > .mobaesport-video > video {
+    position: absolute;
+    inset: 0px;
+    width: 81%;
+    height: 89%;
+    margin: auto;
+}
+/*end mobaEsport*/
+
+/*start nftsItem*/
+.body > #nftsItem.body-content {
+    /* background-image: url(../img/bg-section3.png); */
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.body > .body-content >.content-nft >.nft-btn {
+    text-align: center;
+    margin: 25px;
+}
+.body > .body-content >.content-nft >.nft-btn > span {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 130%;
+    text-transform: uppercase;
+    padding: 10px 14px; 
+    margin: 0px 10px;
+    background: transparent;
+    border: unset;
+    cursor: pointer;
+}
+.body > .body-content >.content-nft >.nft-btn > span.circle {
+    border-radius: 25px;
+    padding: 10px 40px;
+    margin-top: 20px;
+}
+.body > .body-content >.content-nft >.nft-slide {
+    margin: 0 auto;
+    width: 304px;
+}
+.body > .body-content >.content-nft >.nft-slide >.nft-slide-item {
+    display:inline;
+}
+.body > .body-content >.content-nft >.nft-slide >.nft-slide-item > img{
+    width: 150px;
+}
+/*end nftsItem*/
+
+/*start coinToken*/
+.body > #coinToken.body-content {
+    /* background-image: url(../img/bg-section3.png); */
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+/*end coinToken*/
+
+/*start roadMap*/
+.body > #roadMap.body-content {
+    /* background-image: url(../img/bg-section3.png); */
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.body > .body-content > .content-roadmap {
+    color: white;
+    margin: 0 auto;
+}
+.body > .body-content > .content-roadmap > .content-roadmap-info {
+    margin: 0 auto;
+    max-width: 300px;
+}
+.body > .body-content > .content-roadmap > .content-roadmap-info > .info-li.left {
+    position: relative;
+    max-width: 150px;
+}
+.body > .body-content > .content-roadmap > .content-roadmap-info > .info-li.right {
+    position: relative;
+    max-width: 150px;
+}
+.body > .body-content > .content-roadmap > .content-roadmap-info > .info-li > .item-content {
+    color: rgb(248, 203, 99);
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: Kanit;
+}
+.body > .body-content > .content-roadmap > .content-roadmap-info > .info-li > .item-content > .roadmap-title {
+    color: rgb(248, 203, 99);
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: Kanit;
+}
+.body > .body-content > .content-roadmap > .content-roadmap-info > .info-li > .item-content > .roadmap-des {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 5px;
+}
+.body > .body-content > .content-roadmap > .content-roadmap-info > .info-li.right > .item-content {
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-left-color: white;
+    padding-left: 10px;
+    margin-left: 9px;
+    margin-top: -9px;
+}
+.body > .body-content > .content-roadmap > .content-roadmap-info > .info-li.left > .icon-item {
+    width: 50px;
+    margin-left: 151px;
+}
+.body > .body-content > .content-roadmap > .content-roadmap-info > .info-li.left > .item-content {
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-right-color: white;
+    padding-right: 10px;
+    margin-right: 9px;
+    margin-top: -9px;
+    width: 150px;
+    text-align: right;
+}
+/*end roadMap*/
+
+/*start team*/
+.body > #teams.body-content {
+    /* background-image: url(../img/bg-section3.png); */
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.body > .body-content > .content-teams > .teams-slide{
+    margin: 0 auto;
+    display: block;
+    width: 210px;
+}
+.body > .body-content > .content-teams > .teams-slide > .teams-slide-item{
+    margin: 0 auto;
+    display: inline-block;
+    width: 103px;
+}
+.body > .body-content > .content-teams > .teams-slide > .teams-slide-item > img{
+    width: 100px;
+    margin: 5px;
+}
+.body > .body-content > .content-teams > .teams-slide > .teams-slide-item > .item-info-title {
+    color: rgb(0, 255, 216);
+    font-size: 13px;
+    font-family: Poppins;
+    line-height: 1.5;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+}
+.body > .body-content > .content-teams > .teams-slide > .teams-slide-item > .item-info-position {
+    padding: 10px 2px;
+    color:white;
+    text-align: center;
+    display: block;
+}
+/*end team*/
+
+.pointer {
+    cursor: pointer;
+}
+
+.hide {
+    display: none !important;
+}
+
+#btn-up {
+    cursor: pointer;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    text-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-shadow: rgb(0 0 0 / 5%) 0px 0px 10px;
+    background-color: rgba(232, 97, 84, 0.8);
+    border-radius: 5px;
+    opacity: 0.6;
+    transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s, background-color 0.3s ease 0s;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.roadmapEffect.right{
+    position: relative;
+    /* transform: translateX(300px); */
+    left: calc(50% - 4px);
+    opacity: 1;
+    transition: 1s all ease;
+}
+.roadmapEffect.left{
+    position: relative;
+    transform: translateX(-150px);
+    transition: 1s all ease;
+}
+.roadmapEffect.right.active{
+    transform: translateX(150px);
+    opacity: 1;
+}
+.roadmapEffect.left.active{ 
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@media screen and (min-width: 1024px){
+  
+}
